@@ -38,7 +38,8 @@
     "com.unity.modules.wind": "1.0.0",
     "cn.etetet.core": "2.0.5",
     "cn.etetet.loader":"2.0.5",
-    "cn.etetet.hybridclr":"6.7.1"
+    "cn.etetet.hybridclr":"6.7.1",
+    "cn.etetet.referencecollector":"2.0.0"
   },
   "scopedRegistries": [
     {

@@ -1,0 +1,8 @@
+{
+    "name":"com.sunstudio.game",
+    "version": "0.0.1",
+    "displayName": "SunStudio.Game",
+    "description": "游戏",
+    "author": {"name": "Sun"}
+
+}
