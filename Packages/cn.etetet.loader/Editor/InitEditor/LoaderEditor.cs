@@ -13,14 +13,14 @@ namespace ET
 #endif
             
             // 设置GlobalConfig中的SceneName字段
-            SceneNameSetHelper.Run();
+            //SceneNameSetHelper.Run();
             
             LinkSlnHelper.Run();
             
             // 刷新4个程序集的asmdef引用
-            ScriptsReferencesHelper.Run();
+            //ScriptsReferencesHelper.Run();
             
-            CodeModeChangeHelper.ChangeToCodeMode("ClientServer");
+            //CodeModeChangeHelper.ChangeToCodeMode("ClientServer");
             
             InitScriptHelper.Run();
             

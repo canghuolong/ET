@@ -50,8 +50,9 @@ namespace ET
                 Log.Warning($"actor not found mailbox, from: {actorId} current: {fiber.Address} {message}");
                 if (message is IRequest request)
                 {
-                    IResponse resp = MessageHelper.CreateResponse(request.GetType(), request.RpcId, ErrorCode.ERR_NotFoundActor);
-                    self.Reply(actorId.Address, resp);
+                    //暂时不需要
+                    // IResponse resp = MessageHelper.CreateResponse(request.GetType(), request.RpcId, ErrorCode.ERR_NotFoundActor);
+                    // self.Reply(actorId.Address, resp);
                 }
                 return;
             }
@@ -69,11 +70,11 @@ namespace ET
         
         private static void Run(MessageSenderStruct self, IResponse response)
         {
-            if (response.Error == ErrorCode.ERR_MessageTimeout)
-            {
-                self.SetException(new RpcException(response.Error, $"Rpc error: request, 注意Actor消息超时，请注意查看是否死锁或者没有reply: actorId: {self.ActorId} {self.RequestType.FullName}, response: {response}"));
-                return;
-            }
+            // if (response.Error == ErrorCode.ERR_MessageTimeout)
+            // {
+            //     self.SetException(new RpcException(response.Error, $"Rpc error: request, 注意Actor消息超时，请注意查看是否死锁或者没有reply: actorId: {self.ActorId} {self.RequestType.FullName}, response: {response}"));
+            //     return;
+            // }
 
             if (self.NeedException && ErrorCode.IsRpcNeedThrowException(response.Error))
             {
@@ -136,11 +137,12 @@ namespace ET
             Type requestType = request.GetType();
             
             IResponse response;
-            if (!self.SendInner(actorId, (MessageObject)request))  // 纤程不存在
-            {
-                response = MessageHelper.CreateResponse(requestType, rpcId, ErrorCode.ERR_NotFoundActor);
-                return response;
-            }
+            //暂时不需要
+            // if (!self.SendInner(actorId, (MessageObject)request))  // 纤程不存在
+            // {
+            //     response = MessageHelper.CreateResponse(requestType, rpcId, ErrorCode.ERR_NotFoundActor);
+            //     return response;
+            // }
             
             MessageSenderStruct messageSenderStruct = new(actorId, requestType, needException);
             self.requestCallback.Add(rpcId, messageSenderStruct);

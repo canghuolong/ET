@@ -10,7 +10,6 @@
         "ET.ModelView",
         "ET.ReferenceCollector",
         "ET.SourceGeneratorAttribute",
-        "ET.UI",
         "ET.YooAssets",
         "Unity.Mathematics",
         "Unity.TextMeshPro",
