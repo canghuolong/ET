@@ -20,7 +20,7 @@ namespace ET
             // 刷新4个程序集的asmdef引用
             //ScriptsReferencesHelper.Run();
             
-            //CodeModeChangeHelper.ChangeToCodeMode("ClientServer");
+            CodeModeChangeHelper.ChangeToCodeMode("Client");
             
             InitScriptHelper.Run();
             
