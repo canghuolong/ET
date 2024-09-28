@@ -866,7 +866,7 @@ PlayerSettings:
     Android: UNITY;ENABLE_VIEW
     Server: UNITY;ENABLE_VIEW
     Standalone: UNITY;ENABLE_VIEW;INITED
-    WebGL: UNITY;ENABLE_VIEW
+    WebGL: UNITY;ENABLE_VIEW;INITED
     iPhone: UNITY;ENABLE_VIEW
   additionalCompilerArguments: {}
   platformArchitecture:
