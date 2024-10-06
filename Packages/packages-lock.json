@@ -70,8 +70,27 @@
         "com.unity.sharp-zip-lib": "1.3.4-preview"
       }
     },
+    "com.sunstudio.etextension": {
+      "version": "file:com.sunstudio.etextension",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.sunstudio.foldercreator": {
+      "version": "https://github.com/canghuolong/CustomPlugin.git#FolderCreator",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "0149cfebdd935d25db52d55e9e4890187c304ffd"
+    },
     "com.sunstudio.game": {
       "version": "file:com.sunstudio.game",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.sunstudio.ui": {
+      "version": "file:com.sunstudio.ui",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

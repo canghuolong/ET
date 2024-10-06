@@ -13,7 +13,8 @@
         "ET.YooAssets",
         "Unity.Mathematics",
         "Unity.TextMeshPro",
-        "YooAsset"
+        "YooAsset",
+        "SunStudio.UI"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,0 +1,8 @@
+{
+    "name":"com.sunstudio.etextension",
+    "version": "0.0.1",
+    "displayName": "SunStudio.ETExtension",
+    "description": "ET拓展",
+    "author": {"name": "Sun"}
+
+}

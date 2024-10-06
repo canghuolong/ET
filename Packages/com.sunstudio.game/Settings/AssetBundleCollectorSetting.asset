@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
   m_Name: AssetBundleCollectorSetting
   m_EditorClassIdentifier: 
-  ShowPackageView: 0
-  ShowEditorAlias: 0
+  ShowPackageView: 1
+  ShowEditorAlias: 1
   UniqueBundleName: 0
   Packages:
   - PackageName: DefaultPackage
     PackageDesc: 
-    EnableAddressable: 0
+    EnableAddressable: 1
     LocationToLower: 0
     IncludeAssetGUID: 0
     IgnoreDefaultType: 1
     AutoCollectShaders: 1
     Groups:
-    - GroupName: Default Group
+    - GroupName: Default
       GroupDesc: 
       AssetTags: 
       ActiveRuleName: EnableGroup
@@ -33,6 +33,14 @@ MonoBehaviour:
         CollectorGUID: 782bae94af9b34bdab40c719fd1e07ca
         CollectorType: 0
         AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Packages/com.sunstudio.game/Res/Arts/Main
+        CollectorGUID: d63a51e74d39e474bb66bfcdb6d6d386
+        CollectorType: 0
+        AddressRuleName: AddressByGroupAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 

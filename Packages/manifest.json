@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "cn.etetet.core": "2.0.6",
+    "cn.etetet.hybridclr": "6.7.1",
+    "cn.etetet.loader": "2.0.5",
+    "cn.etetet.referencecollector": "2.0.0",
+    "com.sunstudio.foldercreator": "https://github.com/canghuolong/CustomPlugin.git#FolderCreator",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.ide.rider": "3.0.31",
     "com.unity.ide.visualstudio": "2.0.22",
@@ -35,11 +40,7 @@
     "com.unity.modules.unitywebrequestwww": "1.0.0",
     "com.unity.modules.vehicles": "1.0.0",
     "com.unity.modules.video": "1.0.0",
-    "com.unity.modules.wind": "1.0.0",
-    "cn.etetet.core": "2.0.6",
-    "cn.etetet.loader":"2.0.5",
-    "cn.etetet.hybridclr":"6.7.1",
-    "cn.etetet.referencecollector":"2.0.0"
+    "com.unity.modules.wind": "1.0.0"
   },
   "scopedRegistries": [
     {
