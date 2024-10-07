@@ -5,7 +5,6 @@ namespace ET.Client
     [FriendOf(typeof(UIComponent))]
     public static class UIHelper
     {
-        
         public static async ETTask<T> OpenUI<T>(Entity entity, string address,UILayer uiLayer) where T : Entity,IAwake,new()
         {
            UIComponent uiComponent = entity.Root().GetComponent<UIComponent>();
@@ -19,7 +18,6 @@ namespace ET.Client
 
         public static void CloseUI(Entity entity, string address)
         {
-            
             UIComponent uiComponent = entity.Root().GetComponent<UIComponent>();
             uiComponent.Remove(address);
         }

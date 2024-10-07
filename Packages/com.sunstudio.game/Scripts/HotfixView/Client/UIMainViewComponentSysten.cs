@@ -16,14 +16,12 @@ namespace ET.Client
 
             self.Button.onClick.AddListener((() =>
             {
-
+                var tempRoot = self.Root();
                 UIHelper.CloseUI(self, self.GetParent<UI>().Address);
+
+                UIHelper.OpenUI<UILegendViewComponent>(tempRoot,"Default_UINumLegendView", UILayer.Low).NoContext();
+
             }));
-        }
-        [EntitySystem]
-        private static void Destroy(this ET.Client.UIMainViewComponent self)
-        {
-            Debug.Log("Destroy Me!");
         }
     }
 }
