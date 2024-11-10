@@ -1,5 +1,13 @@
 # English: please use your browser to translate to english
 
+
+# 该说再见了！
+1. ET项目开源7年一直坚持免费开源，纯靠自己对C#的热爱一直坚持。但是我现在也没钱吃饭了，没有能力继续维护，后面不再维护开源版本ET，有新功能也会制作成付费Package。如果有人愿意继续维护免费开源版本的ET，请联系QQ：80081771
+2. 本人提供各种企业服务，代码review，程序员培训，架构设计，功能设计，质量把关，面试等服务，基本上是半个主程的作用，有意请联系QQ：80081771
+3. 有合适的全职工作也可以找我，做项目也可以。请联系QQ：80081771
+
+
+
 # __讨论QQ群 : 474643097__ （已满） 新手请加新手群:688514974 
 
 ---
@@ -29,16 +37,23 @@
 18. [魔灵幻想](https://www.taptap.cn/app/337878)  一个技术
 19. [Tank Clash: Blitz!](https://apps.apple.com/us/app/tank-clash-blitz/id6477913248)
 20. [黑山之巅](https://store.steampowered.com/app/2015760/_/?l=schinese)
-21. [赴江湖](https://www.taptap.cn/app/712191) 千年类MMO
+21. [赴江湖](https://www.taptap.cn/app/712191) 一款武侠类MMO
 ---
 
 # ET9最新Package，在这里搜索插件[ET Packages](https://github.com/orgs/ET-Packages/packages)，安装请看运行指南 
-1. [cn.etetet.yiuinumeric](https://lib9kmxvq7k.feishu.cn/wiki/GHDOwsmy0iQQMok3gU7cgxbpn7x) 增强版数值系统，需要搭配下面的luban插件使用，售价100元
-2. [cn.etetet.yiuiluban](https://lib9kmxvq7k.feishu.cn/wiki/W1ylwC9xDip1YQk4eijcxgO9nh0) 无缝替换cn.etetet.excel成luban配置，售价100元
-3. cn.etetet.webgl et9，客户端支持打包webgl，前后端websocket连接，注意微信小游戏需要自己接入，由于已经支持了webgl，小游戏接入并不复杂，不接入小游戏主要是因为有人会使用团结有人用unity，没法统一版本，售价999元(购买过et8 webgl的可以免费升级)
-4. FGUI系列插件，icepower开发，免费
-5. YIUI系列插件，yiyi开发，免费
-   
+1. cn.etetet.mongodb  数据库补丁工具增强db包，用于团队或者线上对数据库数据打补丁，售价100元  
+2. [cn.etetet.yiuinumeric](https://lib9kmxvq7k.feishu.cn/wiki/GHDOwsmy0iQQMok3gU7cgxbpn7x) 增强版数值系统，需要搭配下面的luban插件使用，售价100元
+3. [cn.etetet.yiuiluban](https://lib9kmxvq7k.feishu.cn/wiki/W1ylwC9xDip1YQk4eijcxgO9nh0) 无缝替换cn.etetet.excel成luban配置，售价100元
+   0. 限免 购买luban包即赠送以下所有
+   1. [cn.etetet.yiuicondition](https://lib9kmxvq7k.feishu.cn/wiki/Kc0awA9EXiRJylkreL9cfLJFnsg)  条件系统
+   2. [cn.etetet.yiuigameobjectpool](https://lib9kmxvq7k.feishu.cn/wiki/UyigweBFXipNJnkCIY6coHzFnSc)  游戏对象缓存池
+   3. [cn.etetet.yiuiaudio](https://lib9kmxvq7k.feishu.cn/wiki/ECbzwVPmDiQNY9ktJHecCuGsnig)  音乐音效
+   4. [cn.etetet.yiuivideo](https://lib9kmxvq7k.feishu.cn/wiki/Wt7twM5nciZl5rkKf7ScpGGAn4c)  视频播放
+   5. [cn.etetet.yiuidamagetips](https://lib9kmxvq7k.feishu.cn/wiki/Yt8PwrobfiYijDkuZTWcsGyJnFh)  伤害提示
+4. cn.etetet.webgl  客户端支持打包webgl，前后端websocket连接，注意微信小游戏需要自己接入，由于已经支持了webgl，小游戏接入并不复杂，不接入小游戏主要是因为有人会使用团结有人用unity，没法统一版本，售价999元(购买过et8 webgl的可以免费升级)
+5. FGUI系列插件，icepower开发，免费
+6. [YIUI系列插件](https://lib9kmxvq7k.feishu.cn/wiki/XJxLwzTlViqD5TkSAw1c32Rqnd1) ET-UGUI框架 (yiyi开发，免费)
+
 
 
 # ET9.0 发布！(西施)  
