@@ -1,11 +1,64 @@
 # English: please use your browser to translate to english
 
+# ET开源版本不再维护，后续只维护闭源预制游戏
 
-# 该说再见了！
-1. ET项目开源7年一直坚持免费开源，纯靠自己对C#的热爱一直坚持。但是我现在也没钱吃饭了，没有能力继续维护，后面不再维护开源版本ET，有新功能也会制作成付费Package。如果有人愿意继续维护免费开源版本的ET，请联系QQ：80081771
-2. 本人提供各种企业服务，代码review，程序员培训，架构设计，功能设计，质量把关，面试等服务，基本上是半个主程的作用，有意请联系QQ：80081771
-3. 有合适的全职工作也可以找我，做项目也可以。请联系QQ：80081771
+# ET类魔兽世界预制游戏与课程上架，附赠代码，课程大纲：
+1.进入场景，创建角色  
+2.按键鼠标输入，新的InputSystem  
+3.寻路支持，寻路数据导出 terri支持  
+4.移动  
+5.摄像机跟随  
+6.UnitConfig配置，kv  
+7.生成怪物  
+8.怪物巡逻ai，看看ET写ai多简单  
+9.数值组件改造，NumericType生成，最大值限制，广播机制，是否存库等等，实现数值同步  
+10.技能设计的各种思考，魔兽世界是怎么做的，魔兽世界技能框架的问题  
+11.开始实现自己更好的魔兽世界技能框架，图解新设计  
+12.实现技能配置，技能管理，不需要技能实体  
+13.Buff配置  
+14.技能施放，技能消耗，技能Cd，全局CD
+15.实现一个BT  
+16.实现目标选择，目标切换同步给服务端，目标过滤  
+17.Buff创建，buff的同步，buff叠加规则，bufftick buff的删除  
+18.Effect实现  
+19.技能前摇，读条跟吟唱的实现，以及思考  
+20.人物绑点  
+21.动作播放  
+22.特效播放  
+23.技能指示器实现  
+24.暴风雪的设计思路以及实现  
+25.寒冰箭设计以及实现  
+26.仇恨实现  
+27.普攻实现，自动攻击实现  
+28.怪物ai完善，实现巡逻，追击，返回  
+29.捕获宠物技能实现  
+30.Spell Modify机制，修改技能的命中，伤害，暴击，，cd，读条时间，tick时间,范围，半径等等  
+31.Spell Modify机制举例，实现一个天赋，增加寒冰箭技能10%的攻击力  
+32.技能打断，受击，伤害反弹等等实现  
+33.光环机制实现，例如周围30米友方，伤害增加10%  
+34.位面的实现  
 
+## BT编辑器开发  
+35.创建BT编辑器界面  
+36.右键创建节点  
+37.节点自动实现内容显示，实现内容折叠  
+38.删除节点，复制剪切粘贴，折叠孩子节点  
+39.自动布局实现  
+40.拖动节点实现交换位置，或者作为子节点  
+
+## [类魔兽世界MMO开发课程介绍视频](https://www.bilibili.com/video/BV1GV6DYBEpo/?vd_source=e55f8234b8f8039504cbf131082c93dd)  
+
+后续实现其它技能以及天赋，装备，成就，副本，分线等等
+
+大纲大致如上，感觉大纲还有很多没有列举出来，每节课感觉内容都很多。demo中涉及到大量对ET框架的优化以及修改，就不一一说明了
+
+该课程是持续开发持续录制的，内容并不止上面的内容，后面还会会一直增加新功能，并且配套对应的课程视频，这就相当于新版的ET框架，开源版本不再更新，只持续更新课程版本
+
+每周都有直播，回答学员课程中的疑问
+
+# 需要魔兽世界开发课程跟代码的请加下面QQ群，群里找群主购买
+
+  
 
 
 # __讨论QQ群 : 474643097__ （已满） 新手请加新手群:688514974 
@@ -43,13 +96,13 @@
 # ET9最新Package，在这里搜索插件[ET Packages](https://github.com/orgs/ET-Packages/packages)，安装请看运行指南 
 1. cn.etetet.mongodb  数据库补丁工具增强db包，用于团队或者线上对数据库数据打补丁，售价100元  
 2. [cn.etetet.yiuinumeric](https://lib9kmxvq7k.feishu.cn/wiki/GHDOwsmy0iQQMok3gU7cgxbpn7x) 增强版数值系统，需要搭配下面的luban插件使用，售价100元
-3. [cn.etetet.yiuiluban](https://lib9kmxvq7k.feishu.cn/wiki/W1ylwC9xDip1YQk4eijcxgO9nh0) 无缝替换cn.etetet.excel成luban配置，售价100元
-   0. 限免 购买luban包即赠送以下所有
-   1. [cn.etetet.yiuicondition](https://lib9kmxvq7k.feishu.cn/wiki/Kc0awA9EXiRJylkreL9cfLJFnsg)  条件系统
-   2. [cn.etetet.yiuigameobjectpool](https://lib9kmxvq7k.feishu.cn/wiki/UyigweBFXipNJnkCIY6coHzFnSc)  游戏对象缓存池
-   3. [cn.etetet.yiuiaudio](https://lib9kmxvq7k.feishu.cn/wiki/ECbzwVPmDiQNY9ktJHecCuGsnig)  音乐音效
-   4. [cn.etetet.yiuivideo](https://lib9kmxvq7k.feishu.cn/wiki/Wt7twM5nciZl5rkKf7ScpGGAn4c)  视频播放
-   5. [cn.etetet.yiuidamagetips](https://lib9kmxvq7k.feishu.cn/wiki/Yt8PwrobfiYijDkuZTWcsGyJnFh)  伤害提示
+3. [cn.etetet.yiuiluban](https://lib9kmxvq7k.feishu.cn/wiki/W1ylwC9xDip1YQk4eijcxgO9nh0) 无缝替换cn.etetet.excel成luban配置，售价100元  
+   0. 限免 购买luban包即赠送以下所有  
+   1. [cn.etetet.yiuicondition](https://lib9kmxvq7k.feishu.cn/wiki/Kc0awA9EXiRJylkreL9cfLJFnsg)  条件系统  
+   2. [cn.etetet.yiuigameobjectpool](https://lib9kmxvq7k.feishu.cn/wiki/UyigweBFXipNJnkCIY6coHzFnSc)  游戏对象缓存池  
+   3. [cn.etetet.yiuiaudio](https://lib9kmxvq7k.feishu.cn/wiki/ECbzwVPmDiQNY9ktJHecCuGsnig)  音乐音效  
+   4. [cn.etetet.yiuivideo](https://lib9kmxvq7k.feishu.cn/wiki/Wt7twM5nciZl5rkKf7ScpGGAn4c)  视频播放  
+   5. [cn.etetet.yiuidamagetips](https://lib9kmxvq7k.feishu.cn/wiki/Yt8PwrobfiYijDkuZTWcsGyJnFh)  伤害提示  
 4. cn.etetet.webgl  客户端支持打包webgl，前后端websocket连接，注意微信小游戏需要自己接入，由于已经支持了webgl，小游戏接入并不复杂，不接入小游戏主要是因为有人会使用团结有人用unity，没法统一版本，售价999元(购买过et8 webgl的可以免费升级)
 5. FGUI系列插件，icepower开发，免费
 6. [YIUI系列插件](https://lib9kmxvq7k.feishu.cn/wiki/XJxLwzTlViqD5TkSAw1c32Rqnd1) ET-UGUI框架 (yiyi开发，免费)
