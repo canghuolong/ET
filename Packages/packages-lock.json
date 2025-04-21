@@ -1,5 +1,25 @@
 {
   "dependencies": {
+    "cn.etetet.core": {
+      "version": "3.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://npm.pkg.github.com/@ET-Packages"
+    },
+    "cn.etetet.memorypack": {
+      "version": "file:cn.etetet.memorypack",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.sourcegenerator": {
+      "version": "3.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://npm.pkg.github.com/@ET-Packages"
+    },
     "com.etetet.init": {
       "version": "file:com.etetet.init",
       "depth": 0,
