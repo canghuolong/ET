@@ -1,11 +1,22 @@
 {
   "dependencies": {
     "cn.etetet.core": {
-      "version": "3.0.3",
+      "version": "file:cn.etetet.core",
       "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://npm.pkg.github.com/@ET-Packages"
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.hybridclr": {
+      "version": "file:cn.etetet.hybridclr",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "cn.etetet.loader": {
+      "version": "file:cn.etetet.loader",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "cn.etetet.memorypack": {
       "version": "file:cn.etetet.memorypack",
@@ -14,11 +25,10 @@
       "dependencies": {}
     },
     "cn.etetet.sourcegenerator": {
-      "version": "3.0.1",
+      "version": "file:cn.etetet.sourcegenerator",
       "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://npm.pkg.github.com/@ET-Packages"
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.etetet.init": {
       "version": "file:com.etetet.init",
