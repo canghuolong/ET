@@ -1,0 +1,18 @@
+{
+    "name": "ET.ModelView",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9ef2053bcf13a254ab3940a767f7b1a5",
+        "GUID:bc3e4ef899398497a94a67ff9b0321d2",
+        "GUID:c8c005329ad2fa14e8b04281f65644af"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

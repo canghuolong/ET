@@ -4,15 +4,15 @@ using System.Collections.Generic;
 namespace ET
 {
     [CodeProcess]
-    public class EntitySystemSingleton: Singleton<EntitySystemSingleton>, ISingletonAwake
+    public class EntitySystemSingleton : Singleton<EntitySystemSingleton>, ISingletonAwake
     {
         public TypeSystems TypeSystems { get; private set; }
-        
+
         public void Awake()
         {
             this.TypeSystems = new TypeSystems();
 
-            foreach (Type type in CodeTypes.Instance.GetTypes(typeof (EntitySystemAttribute)))
+            foreach (Type type in CodeTypes.Instance.GetTypes(typeof(EntitySystemAttribute)))
             {
                 SystemObject obj = (SystemObject)Activator.CreateInstance(type);
 
@@ -20,7 +20,7 @@ namespace ET
                 {
                     TypeSystems.OneTypeSystems oneTypeSystems = this.TypeSystems.GetOrCreateOneTypeSystems(iSystemType.Type());
                     oneTypeSystems.Map.Add(iSystemType.SystemType(), obj);
-                    
+
                     if (iSystemType is IClassEventSystem)
                     {
                         oneTypeSystems.ClassType.Add(iSystemType.SystemType());
@@ -28,15 +28,15 @@ namespace ET
                 }
             }
         }
-        
+
         public void Serialize(Entity component)
         {
             if (component is not ISerialize)
             {
                 return;
             }
-            
-            List<SystemObject> iSerializeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (ISerializeSystem));
+
+            List<SystemObject> iSerializeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(ISerializeSystem));
             if (iSerializeSystems == null)
             {
                 return;
@@ -59,15 +59,15 @@ namespace ET
                 }
             }
         }
-        
+
         public void Deserialize(Entity component)
         {
             if (component is not IDeserialize)
             {
                 return;
             }
-            
-            List<SystemObject> iDeserializeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IDeserializeSystem));
+
+            List<SystemObject> iDeserializeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IDeserializeSystem));
             if (iDeserializeSystems == null)
             {
                 return;
@@ -90,11 +90,11 @@ namespace ET
                 }
             }
         }
-        
+
         // GetComponentSystem
         public void GetComponentSys(Entity entity, Type type)
         {
-            List<SystemObject> iGetSystem = this.TypeSystems.GetSystems(entity.GetType(), typeof (IGetComponentSysSystem));
+            List<SystemObject> iGetSystem = this.TypeSystems.GetSystems(entity.GetType(), typeof(IGetComponentSysSystem));
             if (iGetSystem == null)
             {
                 return;
@@ -117,10 +117,10 @@ namespace ET
                 }
             }
         }
-        
+
         public void Awake(Entity component)
         {
-            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IAwakeSystem));
+            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IAwakeSystem));
             if (iAwakeSystems == null)
             {
                 return;
@@ -150,8 +150,8 @@ namespace ET
             {
                 return;
             }
-            
-            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IAwakeSystem<P1>));
+
+            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IAwakeSystem<P1>));
             if (iAwakeSystems == null)
             {
                 return;
@@ -181,8 +181,8 @@ namespace ET
             {
                 return;
             }
-            
-            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IAwakeSystem<P1, P2>));
+
+            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IAwakeSystem<P1, P2>));
             if (iAwakeSystems == null)
             {
                 return;
@@ -212,8 +212,8 @@ namespace ET
             {
                 return;
             }
-            
-            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IAwakeSystem<P1, P2, P3>));
+
+            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IAwakeSystem<P1, P2, P3>));
             if (iAwakeSystems == null)
             {
                 return;
@@ -243,8 +243,8 @@ namespace ET
             {
                 return;
             }
-            
-            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IAwakeSystem<P1, P2, P3, P4>));
+
+            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IAwakeSystem<P1, P2, P3, P4>));
             if (iAwakeSystems == null)
             {
                 return;
@@ -274,8 +274,8 @@ namespace ET
             {
                 return;
             }
-            
-            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IAwakeSystem<P1, P2, P3, P4, P5>));
+
+            List<SystemObject> iAwakeSystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IAwakeSystem<P1, P2, P3, P4, P5>));
             if (iAwakeSystems == null)
             {
                 return;
@@ -305,8 +305,8 @@ namespace ET
             {
                 return;
             }
-            
-            List<SystemObject> iDestroySystems = this.TypeSystems.GetSystems(component.GetType(), typeof (IDestroySystem));
+
+            List<SystemObject> iDestroySystems = this.TypeSystems.GetSystems(component.GetType(), typeof(IDestroySystem));
             if (iDestroySystems == null)
             {
                 return;

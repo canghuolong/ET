@@ -1,0 +1,11 @@
+﻿{
+  "name": "com.sunstuido.game",
+  "displayName": "SunStudio.Game",
+  "version": "3.0.0",
+  "unity": "2022.3",
+  "description": "Game",
+  "author": {
+    "name": "sun"
+
+  }
+}
