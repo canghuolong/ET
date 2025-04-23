@@ -1,21 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using ET;
 using UnityEngine;
+
 
 namespace ET
 {
-    public class AAA : MonoBehaviour
+    [EntitySystemOf(typeof(H))]
+    public static partial class AAA
     {
-        // Start is called before the first frame update
-        void Start()
+        [EntitySystem]
+        private static void Awake(this H self)
         {
-        
-        }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
         }
     }
+
+    [UniqueId]
+    public static partial class U
+    {
+        public const int A = 1;
+        public const int B = 1;
+    }
 }
+
+
+
+
+public class H : Entity ,IAwake
+    {
+        
+    }
+
