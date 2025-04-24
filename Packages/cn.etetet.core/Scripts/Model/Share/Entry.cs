@@ -31,22 +31,22 @@ namespace ET
             WinPeriod.Init();
 
             // 注册Mongo type
-            MongoRegister.Init();
+            // MongoRegister.Init();
             
-            MemoryPackRegister.Init();
+            // MemoryPackRegister.Init();
             
             // 注册Entity序列化器
-            EntitySerializeRegister.Init();
+            // EntitySerializeRegister.Init();
 
             World.Instance.AddSingleton<SceneTypeSingleton, Type>(typeof(SceneType));
             World.Instance.AddSingleton<ObjectPool>();
             World.Instance.AddSingleton<IdGenerater>();
             World.Instance.AddSingleton<OpcodeType>();
             
-            World.Instance.AddSingleton<MessageQueue>();
-            World.Instance.AddSingleton<NetServices>();
+            // World.Instance.AddSingleton<MessageQueue>();
+            // World.Instance.AddSingleton<NetServices>();
             
-            LogMsg logMsg = World.Instance.AddSingleton<LogMsg>();
+            // LogMsg logMsg = World.Instance.AddSingleton<LogMsg>();
             
             
             // 创建需要reload的code singleton
@@ -54,7 +54,7 @@ namespace ET
             
             // await World.Instance.AddSingleton<ConfigLoader>().LoadAsync();
             
-            await FiberManager.Instance.Create(SchedulerType.Main, SceneType.Main, 0, SceneType.Main, "");
+            await FiberManager.Instance.Create(SchedulerType.Main, SceneType.Main, 0, SceneType.Main, "Main");
         }
     }
 }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GlobalConfig
   m_EditorClassIdentifier: 
   CodeMode: 1
-  SceneName: StateSync
+  SceneName: Game
   Address: 127.0.0.1:10101
